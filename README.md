@@ -28,8 +28,9 @@ Arguments:
 - `group_name`: A unique identifier for file naming (e.g. name of experiment).
 
 Running `create_psi_matrix.py` will produce two output ('.csv`) files:
-- 
-- 
+- psi_matrix.example_data.csv: PSI matrix where rows are samples and columns are LSVs
+- lsv_data_dictionary.example_data.csv: LSV annotation dictionary where each row is an LSV and each column contains information regarding the LSV.
+
 
 Example data is stored in the directory `example_data`:
 - `sample_LSVs.txt`: Line by line listing of simulated sample LSV data. A total of 10,000 LSVs are present across the samples although some LSVs are missing in each sample (a common observation when setting read thresholds for PSI estimation with MAJIQ).
