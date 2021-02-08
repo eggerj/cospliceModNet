@@ -11,7 +11,7 @@ In a typical differential splicing analysis we would first define our two sample
 
 Under default settings, `majiq psi` will also create a `.tsv` alongside the `.psi` file. These are tab delimited files containing human readable splicing values for each LSV. For whatever reason, the `.tsv` files created here only contain limited information regarding each LSV (probably enough for most uses). For our needs, however, we require some more information regarding each LSV and we can obtain this information by generating more extensive `.tsv` files using MAJIQ's `voila tsv` function on each `.psi` file. This will create a `.tsv` with more columns than those created using `majiq psi` (we can set the `majiq psi` parameters to not generate the `.tsv` since we don't need them anyways).
 
-For more details on how to work with the MAJIQ framework visit [majiq.biociphers.org](http://majiq.biociphers.org.org/)
+For more details on how to work with the MAJIQ framework visit [majiq.biociphers.org](http://majiq.biociphers.org/)
 
 ## Collecting LSV Splicing Values from Sample TSV Files
 
