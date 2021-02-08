@@ -27,6 +27,10 @@ Arguments:
 - `gtf`: Exon models in GTF format for annotating event types of LSVs and SVRs. GTF should be the same build and version of the GFF file used during the build step with MAJIQ and should only contain "exon" records (third column). Exon only GTF can be created using awk.
 - `group_name`: A unique identifier for file naming (e.g. name of experiment).
 
+Running `create_psi_matrix.py` will produce two output ('.csv`) files:
+- 
+- 
+
 Example data is stored in the directory `example_data`:
 - `sample_LSVs.txt`: Line by line listing of simulated sample LSV data. A total of 10,000 LSVs are present across the samples although some LSVs are missing in each sample (a common observation when setting read thresholds for PSI estimation with MAJIQ).
 - `exons.example_data.gtf`: A GTF file containing exon records for all genes in which the simulated LSVs were derived. 
