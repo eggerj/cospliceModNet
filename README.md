@@ -21,6 +21,12 @@ Example data is stored in the directory `example_data`. Output data created by `
 
 ## Formulating SVRs for De Novo Network Inference of Co-splicing Modules
 
-The R script `cosplicing_module_infererence.R` loads the sample LSV quantities and LSV annotations in order to formulate SVRs and perform de novo network inference using the WGCNA framework. 
+The following R libraries are required for SVR formulation and network inference:
+- `WGCNA`
+- `stringr`  
+- `ComplexHeatmap`
+- `circlize`
+
+The R script `cosplicing_module_infererence.R` loads the sample LSV quantities and LSV annotations in order to formulate SVRs and perform de novo network inference using the WGCNA framework.  
 
 
