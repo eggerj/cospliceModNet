@@ -27,9 +27,9 @@ Arguments:
 - `gtf`: Exon models in GTF format for annotating event types of LSVs and SVRs. GTF should be the same build and version of the GFF file used during the build step with MAJIQ and should only contain "exon" records (third column). Exon only GTF can be created using awk.
 - `group_name`: A unique identifier for file naming (e.g. name of experiment).
 
-Running `create_psi_matrix.py` will produce two output ('.csv`) files:
-- psi_matrix.example_data.csv: PSI matrix where rows are samples and columns are LSVs
-- lsv_data_dictionary.example_data.csv: LSV annotation dictionary where each row is an LSV and each column contains information regarding the LSV.
+Running `create_psi_matrix.py` will produce two output (`.csv`) files:
+- `psi_matrix.example_data.csv`: PSI matrix where rows are samples and columns are LSVs
+- `lsv_data_dictionary.example_data.csv`: LSV annotation dictionary where each row is an LSV and each column contains information regarding the LSV.
 
 
 Example data is stored in the directory `example_data`:
@@ -46,6 +46,6 @@ The following R libraries are required for SVR formulation and network inference
 - `ComplexHeatmap`
 - `circlize`
 
-The R script `cosplicing_module_infererence.R` loads the sample LSV quantities and LSV annotations in order to formulate SVRs and perform de novo network inference using the WGCNA framework.  
+The R script `cosplicing_module_infererence.R` walks the user through loading the splicing data, formulating SVRs, and performing basic network inference and module detection using the WGCNA framework. It loads an additional file `cosplicing_helper_functions.R` which contains convenience functions for formulating SVRs and identifying co-splicing modules. Both output files from the previous step are required for SVR formulation.
 
 
