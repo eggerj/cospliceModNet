@@ -9,10 +9,15 @@ The script create_psi_matrix.py collects LSV splicing quantities from sample MAJ
 
 Example data is stored in example_data directory. 
 
-Run create_psi_matrix.py using Python 3 (`numpy required`):
+Run create_psi_matrix.py using Python 3 (`numpy` required):
 ```bash
-python3 create_psi_matrix.py --tsv_files --out_dir --gtf --group_name 
+python3 create_psi_matrix.py --tsv_files example_data/sample_LSVs.txt --out_dir test_out --gtf example_data/exons.example_data.gtf --group_name example_data  
 ```
+Arguments:
+- `tsv_files`: Text file listing names (and paths) of sample TSV files created by MAJIQ (`majiq tsv`).
+- `out_dir`: Name of directory (and path) for output files to be written.
+- `gtf`: Exon models in GTF format for annotating event types of LSVs and SVRs. GTF should be the same build and version of the GFF file used during the build step with MAJIQ and should only contain "exon" records (third column). Exon only GTF can be created using awk.
+- `group_name`: A unique identifier for file naming (e.g. name of experiment).
 
 Output data from create_psi_matrix.py has already been created and is stored in test_out for use with the R script cosplicing_module_inference.R. 
 
