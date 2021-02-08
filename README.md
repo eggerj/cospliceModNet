@@ -5,9 +5,7 @@ This repository contains Python and R scripts for performing co-splicing module 
 
 ## Collecting LSV Splicing Values from Sample TSV Files
 
-The script create_psi_matrix.py collects LSV splicing quantities from sample MAJIQ files (TSV files) and creates a .csv file representing a sample by LSV PSI matrix. In addition, the script creates a second .csv file containing annotations for each LSV including the gene name, gene ID (Ensembl), splicing event type, number of junctions, and most noteably, an SVR assignment indicating which SVR the LSV belongs to for SVR formulation (performed later in R). The remaining .py files contain functions used by create_psi_matrix.py for sample LSV processing. 
-
-Example data is stored in example_data directory. 
+The script `create_psi_matrix.py` collects LSV splicing quantities from sample MAJIQ files (TSV files) and creates a .csv file representing a sample by LSV matrix of PSI quantities. In addition, the script creates a second .csv file containing annotations for each LSV including the gene name, gene ID (Ensembl), splicing event type, number of junctions, and most noteably, an SVR assignment indicating which SVR the LSV belongs to for SVR formulation (performed later in R). The remaining .py files contain functions used by `create_psi_matrix.py` for sample LSV processing. 
 
 Run create_psi_matrix.py using Python 3 (`numpy` required):
 ```bash
@@ -19,8 +17,10 @@ Arguments:
 - `gtf`: Exon models in GTF format for annotating event types of LSVs and SVRs. GTF should be the same build and version of the GFF file used during the build step with MAJIQ and should only contain "exon" records (third column). Exon only GTF can be created using awk.
 - `group_name`: A unique identifier for file naming (e.g. name of experiment).
 
-Output data from create_psi_matrix.py has already been created and is stored in test_out for use with the R script cosplicing_module_inference.R. 
+Example data is stored in the directory `example_data`. Output data created by `create_psi_matrix.py` using the example data has already been created and is stored in `test_out` for use with the R script `cosplicing_module_inference.R`. 
 
-The R script cosplicing_module_infererence.R loads the sample LSV quantities and LSV annotations in order to formulate SVRs and perform de novo network inference using the WGCNA framework. 
+## Formulating SVRs for De Novo Network Inference of Co-splicing Modules
+
+The R script `cosplicing_module_infererence.R` loads the sample LSV quantities and LSV annotations in order to formulate SVRs and perform de novo network inference using the WGCNA framework. 
 
 
