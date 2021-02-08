@@ -1,7 +1,7 @@
 # cospliceModNet
 
 
-This repository contains Python and R scripts for performing co-splicing module network inference using complex splicing variants quantified from the MAJIQ framework for complex alternative splicing. Simulated local splicing variant (LSV) percent spliced in (PSI) values have been created in the form of output files from MAJIQ to use as an example. 
+This repository contains Python and R scripts for performing de novo network inference of co-splicing modules using complex alternative splicing variants. Complex splicing variants are annotated and quantified using the MAJIQ framework for complex alternative splicing. MAJIQ quantifies complex splicing in the form of local splicing variants (LSVs). Prior to network inference we formulate LSVs into splice variant regions (SVRs) representing variation in splicing levels across samples for a cluster of LSVs within a given gene. Simulated local splicing variant (LSV) percent spliced in (PSI) values have been created in the form of output files from MAJIQ to use as an example. 
 
 ## Creating Sample TSV Files of LSV PSI Quantities Using MAJIQ Framework
 
