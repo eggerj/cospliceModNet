@@ -49,3 +49,5 @@ The following R libraries are required for SVR formulation and network inference
 The R script `cosplicing_module_infererence.R` walks the user through loading the splicing data, formulating SVRs, and performing basic network inference and module detection using the WGCNA framework. It loads an additional file `cosplicing_helper_functions.R` which contains convenience functions for formulating SVRs and identifying co-splicing modules. Both output files from the previous step are required for SVR formulation.
 
 
+## Credits & Acknowledgements
+- [WGCNA](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/)
