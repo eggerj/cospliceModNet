@@ -51,3 +51,6 @@ The R script `cosplicing_module_infererence.R` walks the user through loading th
 
 ## Credits & Acknowledgements
 - [WGCNA](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/)
+- [MAJIQ](http://majiq.biociphers.org/)
+- [BeatAML](https://www.lls.org/research/bringing-precision-medicine-to-aml-patients)
+- [GTEx](https://gtexportal.org/home/)
